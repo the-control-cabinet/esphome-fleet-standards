@@ -1,0 +1,10 @@
+board,profile,role,bluetooth,mqtt,firmware,last_change
+connection proxy - ground (interim),A,BLE connections ground floor,active,scanner,2026.10.0,2026-10-27
+connection proxy - 1st,A,BLE connections 1st floor + device bridge,active,scanner,2026.10.0,2026-10-27
+connection proxy - 2nd,A,BLE connections 2nd floor,active,scanner,2026.10.0,2026-10-27
+passive proxies (x5),B,presence + discovery logger,passive,scanner,2026.10.0,2026-10-27
+understairs plant,C,UFH/cooker monitoring,passive,none,2026.10.0,2026-10-27
+utility,C,water metering,passive,none,2026.10.0,2026-10-27
+control room,D,boiler plant monitoring,none,none,2026.10.0,2026-10-28
+camera,E,camera,none,none,,
+VPin,E,rail current monitoring,passive,,,

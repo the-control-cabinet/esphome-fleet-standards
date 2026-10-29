@@ -1,0 +1,29 @@
+# Standard blocks included on every board (credentials via !secret).
+logger:
+  level: INFO
+api:
+  encryption:
+    key: !secret <hostname_underscored>_key
+ota:
+  - platform: esphome
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    password: !secret fallback_ap_password
+captive_portal:
+debug:
+  update_interval: 10s
+sensor:
+  - platform: uptime
+    name: "<Board> Uptime"
+  - platform: wifi_signal
+    name: "<Board> WiFi Signal"
+    update_interval: 60s
+  - platform: debug
+    free:
+      name: "<Board> Heap Free"
+    block:
+      name: "<Board> Heap Max Block"
+    loop_time:
+      name: "<Board> Loop Time"
